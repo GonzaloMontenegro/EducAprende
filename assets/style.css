@@ -1,0 +1,117 @@
+footer {
+background-color: #2d2d2d;   /* Gris oscuro suave */
+color: #d1d1d1;              /* Texto gris claro */
+padding: 1.5rem 0;           /* 24px arriba/abajo */
+text-align: center;
+font-family: Arial, sans-serif;
+font-size: 0.9rem;
+}
+
+/* Contenedor interno para centrar el contenido */
+footer .container {
+max-width: 900px;
+margin: 0 auto;
+padding: 0 1rem;
+}
+
+/* Texto principal del footer */
+footer .container p {
+margin: 0;
+font-weight: 600;
+font-size: 1rem;
+}
+
+/* Enlaces del footer */
+footer .footer-links {
+  margin-top: 0.75rem;        /* 12px de separación */
+display: inline-flex;
+  gap: 1rem;                  /* 16px entre enlaces */
+}
+
+footer .footer-links a {
+  color: #a5a5a5;             /* Gris medio */
+text-decoration: none;
+transition: color 0.2s ease-in-out;
+}
+
+footer .footer-links a:hover {
+  color: #ffffff;             /* Blanco al pasar el ratón */
+}
+
+/* Pequeño ajuste responsivo */
+@media (max-width: 480px) {
+footer .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+}
+
+main .container {
+    padding-inline-start: 8px;
+    width: 900px; /* Ajusta según lo que necesites */
+    height: 500px;
+    border-radius: 20px 50px 20px 50px; /* Esquinas cursivas alternadas */
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-image: url(../Pictures/Generation.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    background-color: #ededea;
+}
+
+h1 {
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    font-family: "Comic Neue", cursive;
+    font-weight: 550;
+    font-style: normal;
+}
+.btn-warning {
+     font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.texto-profesional {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, #000000 0%, #5628d4 100%);
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 44px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.texto-profesional h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.texto-profesional p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.texto-profesional:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
