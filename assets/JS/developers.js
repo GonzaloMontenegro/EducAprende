@@ -5,7 +5,6 @@ developers.forEach(developer => {
     developer.addEventListener('mouseenter', () => {
         container.classList.add('developers-hover');
         developer.classList.add('hovered');
-        //cambiar el texto con el id nameAbout, por "Hola"
         const nameAbout = document.getElementById('nameAbout');
         const detailAbout = document.getElementById('detailAbout');
         // Verifica si tiene la clase con el nombre el desarrollador
