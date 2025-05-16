@@ -46,7 +46,7 @@ footer .footer-links {
 }
 }
 
-main .container {
+main .aboutUs {
     padding-inline-start: 8px;
     width: 900px; /* Ajusta según lo que necesites */
     height: 500px;
@@ -83,7 +83,7 @@ p {
     font-style: normal;
 }
 .btn-warning {
-     font-family: "Coiny", system-ui;
+    font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
 }
@@ -115,3 +115,61 @@ p {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
+
+/* start ABOUT */
+
+.developers-container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 50px 0px 0px 0px;
+  overflow: hidden;
+  height: 600px;
+}
+/* container */
+.developer-person {
+  width: 200px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+/* positions */
+.fernanda{
+  left: 200px;
+  z-index: 1;
+  
+}
+.diego{
+  left: 95px;
+  z-index: 2; 
+}
+.gonzalo{
+  z-index: 3;
+}
+.felipe{
+  right: 99px;
+  z-index: 2;
+}
+.margarita{
+  right: 205px;
+  z-index: 1;
+}
+
+.developer-img {
+  width: 50vh;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.developer-person.hovered {
+  transform: scale(1.15);
+  z-index: 4;
+}
+
+.developers-hover .developer-person:not(.hovered) {
+  filter: grayscale(100%) blur(3px);
+}
+
+.info-developers{
+  background-color: #e5b8ee;
+  border-radius: 5px;
+}
+/* end ABOUT */
