@@ -1,4 +1,24 @@
 
+
+
+body{
+    background-image: url('../img/doodles_bg.jpg');
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #F4B740;
+}
+
+/* categorías y juegos cards */
 .mycard{
     width: 100%;
     height: 90%;
@@ -16,21 +36,9 @@
     height: 50%;
 }
 
-body{
-    background-image: url('../img/doodles_bg.jpg');
-    background-size: cover;
-}
-footer a{
-    color: white;
-}
-
-footer a:hover{
-    color: #F4B740;
-}
-
 main .aboutUs {
     padding-inline-start: 8px;
-    width: 900px; /* Ajusta según lo que necesites */
+    width: 1500px; /* Ajusta según lo que necesites */
     height: 500px;
     border-radius: 20px 50px 20px 50px; /* Esquinas cursivas alternadas */
     justify-content: center;
@@ -59,7 +67,16 @@ h2 {
     font-weight: 400;
     font-style: normal;
 }
-p {
+.section-title{
+  font-family: "Coiny", system-ui;
+  color: #3564B7;
+}
+.card-title{
+  font-family: "Coiny", system-ui;
+  color: #3564B7;
+  font-size: 1.5rem;
+}
+p, footer li {
     font-family: "Comic Neue", cursive;
     font-weight: 550;
     font-style: normal;
@@ -70,7 +87,7 @@ p {
     font-style: normal;
 }
 .texto-profesional {
-  max-width: 800px;
+  max-width: 1500px;
   margin: 2rem auto;
   padding: 2rem 1.5rem;
   background: linear-gradient(135deg, #000000 0%, #5628d4 100%);
@@ -98,50 +115,45 @@ p {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
 
+/* start ABOUT */
+
 .developers-container {
-  
   display: flex;
   justify-content: start;
-  padding-top: 50px;
+  flex-wrap: wrap;
+  padding: 50px 0px 0px 0px;
   overflow: hidden;
-  position: relative;
-  
+  height: 600px;
 }
-/* desde los 992 pixeles, la clase .developers-container se le aplica un align-self: center*/
-@media (min-width: 992px) {
-  .developers-container {
-    align-self: center;
-  }
-}
-
 /* container */
 .developer-person {
+  width: 200px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 /* positions */
 .fernanda{
-  
+  left: 200px;
   z-index: 1;
   
 }
 .diego{
-
+  left: 95px;
   z-index: 2; 
 }
 .gonzalo{
   z-index: 3;
 }
 .felipe{
-  
+  right: 99px;
   z-index: 2;
 }
 .margarita{
-  
+  right: 205px;
   z-index: 1;
 }
 
 .developer-img {
-  width: 200%;
+  width: 50vh;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -158,10 +170,5 @@ p {
 .info-developers{
   background-color: #e5b8ee ; 
   border-radius: 30px;
-
-}
-
-.developer-box{
-  width: 100%;
 }
 /* end ABOUT */
