@@ -1,0 +1,40 @@
+body {
+    font-family: 'Coiny', cursive;
+}
+.navbar-custom {
+    background-color: #4dd0c5;
+}
+.brand-box {
+    background-color: #fbbc3b;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+}
+.brand-box:hover {
+    background-color: #7a56d0;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.brand-box span:nth-child(1) {
+    color: white;
+}
+.nav-link {
+    color: white !important;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.nav-link:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+.user-icon {
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.2s ease;
+}
+.user-icon:hover {
+    transform: scale(1.2);
+}

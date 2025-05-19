@@ -1,52 +1,34 @@
-footer {
-background-color: #2d2d2d;   /* Gris oscuro suave */
-color: #d1d1d1;              /* Texto gris claro */
-padding: 1.5rem 0;           /* 24px arriba/abajo */
-text-align: center;
-font-family: Arial, sans-serif;
-font-size: 0.9rem;
+
+.mycard{
+    width: 100%;
+    height: 90%;
+    transition: ease-in-out 0.5s;
 }
 
-/* Contenedor interno para centrar el contenido */
-footer .container {
-max-width: 900px;
-margin: 0 auto;
-padding: 0 1rem;
+.mycard:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
-/* Texto principal del footer */
-footer .container p {
-margin: 0;
-font-weight: 600;
-font-size: 1rem;
+.card-img-top{
+    MARGIN-top: 45px;
+    width: 40%;
+    height: 50%;
 }
 
-/* Enlaces del footer */
-footer .footer-links {
-  margin-top: 0.75rem;        /* 12px de separación */
-display: inline-flex;
-  gap: 1rem;                  /* 16px entre enlaces */
+body{
+    background-image: url('../img/doodles_bg.jpg');
+    background-size: cover;
+}
+footer a{
+    color: white;
 }
 
-footer .footer-links a {
-  color: #a5a5a5;             /* Gris medio */
-text-decoration: none;
-transition: color 0.2s ease-in-out;
+footer a:hover{
+    color: #F4B740;
 }
 
-footer .footer-links a:hover {
-  color: #ffffff;             /* Blanco al pasar el ratón */
-}
-
-/* Pequeño ajuste responsivo */
-@media (max-width: 480px) {
-footer .footer-links {
-    flex-direction: column;
-    gap: 0.5rem;
-}
-}
-
-main .container {
+main .aboutUs {
     padding-inline-start: 8px;
     width: 900px; /* Ajusta según lo que necesites */
     height: 500px;
@@ -56,7 +38,7 @@ main .container {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
     font-weight: bold;
-    background-image: url(../Pictures/Generation.png);
+    background-image: url(../img/Generation.png);
     background-size: cover;
     background-position: center;
 }
@@ -83,7 +65,7 @@ p {
     font-style: normal;
 }
 .btn-warning {
-     font-family: "Coiny", system-ui;
+    font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
 }
@@ -115,3 +97,71 @@ p {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
+
+.developers-container {
+  
+  display: flex;
+  justify-content: start;
+  padding-top: 50px;
+  overflow: hidden;
+  position: relative;
+  
+}
+/* desde los 992 pixeles, la clase .developers-container se le aplica un align-self: center*/
+@media (min-width: 992px) {
+  .developers-container {
+    align-self: center;
+  }
+}
+
+/* container */
+.developer-person {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+/* positions */
+.fernanda{
+  
+  z-index: 1;
+  
+}
+.diego{
+
+  z-index: 2; 
+}
+.gonzalo{
+  z-index: 3;
+}
+.felipe{
+  
+  z-index: 2;
+}
+.margarita{
+  
+  z-index: 1;
+}
+
+.developer-img {
+  width: 200%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.developer-person.hovered {
+  transform: scale(1.15);
+  z-index: 4;
+}
+
+.developers-hover .developer-person:not(.hovered) {
+  filter: grayscale(100%) blur(3px);
+}
+
+.info-developers{
+  background-color: #e5b8ee ; 
+  border-radius: 30px;
+
+}
+
+.developer-box{
+  width: 100%;
+}
+/* end ABOUT */
