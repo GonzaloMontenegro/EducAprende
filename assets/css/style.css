@@ -38,8 +38,8 @@ footer a:hover{
 
 main .aboutUs {
     padding-inline-start: 8px;
-    width: 1500px; /* Ajusta según lo que necesites */
-    height: 500px;
+    width: 2000px; /* Ajusta según lo que necesites */
+    height: 700px;
     border-radius: 20px 50px 20px 50px; /* Esquinas cursivas alternadas */
     justify-content: center;
     align-items: center;
@@ -52,9 +52,16 @@ main .aboutUs {
 }
 
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
-    background-color: #ededea;
+  background: linear-gradient(-45deg, #52eeeb, #e73c7e, #0270df, #fd5400);
+  background-size: 400% 400%;
+  animation: animarFondo 15s ease infinite;
+  margin: 0;
+}
+
+@keyframes animarFondo {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 h1 {
@@ -87,10 +94,10 @@ p, footer li {
     font-style: normal;
 }
 .texto-profesional {
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 2rem auto;
   padding: 2rem 1.5rem;
-  background: linear-gradient(135deg, #000000 0%, #5628d4 100%);
+  background: linear-gradient(135deg, #ff07f7cb 0%, #ff07f7cb 100%);
   color: #fff;
   border-radius: 20px;
   box-shadow: 0 15px 44px rgba(0, 0, 0, 0.15);
@@ -106,6 +113,7 @@ p, footer li {
 }
 
 .texto-profesional p {
+  background: darkorchid;
   margin-bottom: 0;
   font-size: 1rem;
 }
