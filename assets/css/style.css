@@ -30,7 +30,7 @@ footer a:hover{
 
 main .aboutUs {
     padding-inline-start: 8px;
-    width: 900px; /* Ajusta según lo que necesites */
+    width: 1500px; /* Ajusta según lo que necesites */
     height: 500px;
     border-radius: 20px 50px 20px 50px; /* Esquinas cursivas alternadas */
     justify-content: center;
@@ -70,7 +70,7 @@ p {
     font-style: normal;
 }
 .texto-profesional {
-  max-width: 800px;
+  max-width: 1500px;
   margin: 2rem auto;
   padding: 2rem 1.5rem;
   background: linear-gradient(135deg, #000000 0%, #5628d4 100%);
