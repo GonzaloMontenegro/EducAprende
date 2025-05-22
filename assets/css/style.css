@@ -37,7 +37,6 @@ main .aboutUs {
     padding-inline-start: 8px;
     width: 100%; /* Ajusta según lo que necesites */
     height: 950px;
-    border-radius: 20px 50px 20px 50px; /* Esquinas cursivas alternadas */
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
@@ -112,7 +111,7 @@ p, header {
   padding: 2rem 1.5rem;
   background: linear-gradient(135deg, #81F0EF 0%, #81F0EF 100%);
   color: #b93636;
-  border-radius: 20px;
+
   box-shadow: 0 15px 44px rgba(0, 0, 0, 0.15);
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
@@ -134,7 +133,6 @@ p, header {
 }
 
 .texto-profesional:hover {
-  transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
 
