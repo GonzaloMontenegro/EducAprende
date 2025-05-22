@@ -1,6 +1,24 @@
 body {
     font-family: 'Coiny', cursive;
 }
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+.scroll-top-btn {
+    background-color: #7a55d0;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.scroll-top-btn:hover i {
+    color: black;
+}
+.scroll-top-btn:hover {
+    background-color: #fabe3b;
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .navbar-custom {
     background-color: #4dd0c5;
 }
