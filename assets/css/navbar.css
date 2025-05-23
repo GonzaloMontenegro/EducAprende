@@ -6,7 +6,7 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 .scroll-top-btn {
-    background-color: #7a55d0;
+    background-color: #7a56d0;
     color: white;
     border: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -20,10 +20,10 @@ body {
     cursor: pointer;
 }
 .navbar-custom {
-    background-color: #4dd0c5;
+    background-color: #58d2ca;
 }
 .brand-box {
-    background-color: #fbbc3b;
+    background-color: #f4b740;
     color: white;
     padding: 6px 14px;
     border-radius: 10px;
